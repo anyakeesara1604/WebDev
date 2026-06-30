@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: radial-gradient(circle at top, #2d3748, #0f1117 70%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  height: 400px;
+  width: 300px;
+  background: linear-gradient(145deg, #3b2c5a, #232946);
+  border-radius: 10px;
+  box-shadow: 5px 15px 30px rgba(90, 120, 255, 0.3);
+  padding: 10px;
+  font-family: sans-serif;
+  transition:
+    transform 0.6s ease-out,
+    box-shadow 0.6s ease-out;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box {
+  overflow: hidden;
+}
+
+img {
+  height: 160px;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.6s ease-out;
+  object-fit: cover;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(127, 127, 255);
+  padding: 10px;
+}
+
+.abt {
+  margin-bottom: 15px;
+  color: rgb(175, 175, 175);
+}
+
+.abt span {
+  font-size: small;
+  border: 1px solid rgb(175, 175, 175);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.content {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}
+
+button {
+  border: none;
+  padding: 8px;
+  border-radius: 30px;
+  display: flex;
+  margin: 27px auto;
+  background-color: #6a4ba7;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 7px 20px 40px rgba(113, 138, 250, 0.3);
+}
+
+.card:hover img {
+  transform: scale(1.18);
+}
+
+button:hover {
+  transform: scale(1.07);
+  background: #7b58c2;
+}
+
+.overlay {
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(199, 103, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  width: 285px;
+  height: 190px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -220px;
+  background: linear-gradient(145deg, #2c2045, #1b2038);
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover .overlay {
+  transform: translateY(-235px);
+}
